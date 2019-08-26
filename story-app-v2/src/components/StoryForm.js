@@ -41,7 +41,7 @@ class StoryForm extends Component {
                             </textarea>
                             {body.length <= 5 ? 'body must be <=5 char' : ''}
                         </div>
-                        <button>submit</button>&nbsp;&nbsp;
+                        <button>submit</button>&nbsp;&nbsp;&nbsp;
                         <button type="button" onClick={e => this.toggleForm()}>cancel</button>
                     </form>
                 </div>
