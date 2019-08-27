@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types'
 import Greeting from './components/Greeting';
 import ActionBox from './components/ActionBox';
+import A from './components/A';
+import FoodBox from './components/FoodBox';
+import Veg from './components/Veg';
+import NonVeg from './components/NonVeg';
+import TopicList from './components/TopicList';
+import CommentList from './components/CommentList';
 
 class App extends Component {
   state = {
@@ -25,8 +31,44 @@ class App extends Component {
         <hr />
         <h1>{title} - by <span className="badge badge-info">{trainer}</span></h1>
         <hr />
+        <div className="row">
+          <div className="col-6 col-sm-6 col-md-6">
+            <TopicList />
+          </div>
+          <div className="col-6 col-sm-6 col-md-6">
+            <CommentList />
+          </div>
+        </div>
 
-        <ActionBox />
+
+
+        {/* 
+
+        <Veg>
+          <h1>VEG</h1>
+        </Veg>
+        
+        <FoodBox >
+          <Veg />
+          <Veg />
+          <Veg />
+        </FoodBox>
+
+        <FoodBox>
+          <NonVeg />
+          <NonVeg />
+          <Veg />
+        </FoodBox> 
+        */}
+
+        {
+        /* 
+        <A color={"red"}/>
+        <A color={"green"}/>
+        <A color={"blue"}/> 
+        */}
+
+        {/* <ActionBox /> */}
 
         {/* 
         <button onClick={e => this.changeMessage('good morning')}>GM</button>
